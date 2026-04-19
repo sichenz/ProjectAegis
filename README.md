@@ -49,10 +49,20 @@ ProjectAegis/
 # Create and activate the environment
 conda env create -f environment.yml
 conda activate project_aegis
-
-# Download the HAI Security Dataset (requires Kaggle API key)
-python scripts/download_data.py
 ```
+
+**Kaggle Setup** (required for dataset download):
+1. Go to [kaggle.com/settings](https://www.kaggle.com/settings) and click **"Create New Token"** under the API section
+2. Set environment variables:
+   ```bash
+   export KAGGLE_USERNAME=your_username
+   export KAGGLE_KEY=your_api_key
+   ```
+
+3. Download the dataset:
+   ```bash
+   python scripts/download_data.py
+   ```
 
 ### Option 2: Docker (Recommended for Deployment)
 

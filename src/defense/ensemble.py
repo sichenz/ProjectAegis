@@ -32,7 +32,7 @@ def train_ensemble():
     window_size = 60
     batch_size = 256
     # Train very quickly for demonstration (1 epoch)
-    num_epochs = 1 
+    num_epochs = 5
     learning_rate = 1e-3
     
     print("Loading datasets for Ensemble Training...")
