@@ -1,0 +1,35 @@
+# Git
+.git/
+.gitattributes
+.gitignore
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Documentation (not needed in container)
+docs/
+README.md
+
+# Unnecessary data versions (only copy hai-23.05)
+data/hai-20.07/
+data/hai-21.03/
+data/hai-22.04/
+data/haiend-23.05/
+data/graph/
+data/*.pdf
+
+# Conda environment file (not used in Docker)
+environment.yml

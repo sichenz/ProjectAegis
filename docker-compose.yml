@@ -1,10 +1,10 @@
-version: '3.8'
-
 services:
   edge-ai-node:
     build: .
     container_name: project-aegis-edge
-    # We can mount volumes if we want to save logs or charts back to the host, 
-    # but for a simple evaluation run, the default COPY in Dockerfile is fine.
-    # To run the visualization script instead:
+    volumes:
+      # Mount output directory to persist results on the host
+      - ./output:/app/output
+    # Default command runs evaluation. Override to run other scripts:
     # command: python scripts/visualize.py
+    # command: python src/attack/fgsm_attack.py --model ensemble.pth

@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# PyTorch model weights (tracked via LFS or downloaded)
+models/*.pth
+models/*.pkl
+
+# Data (too large for git, download via scripts/download_data.py)
+data/hai-*/
+data/haiend-*/
+data/graph/
+data/*.pdf
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Environment files with secrets
+.env

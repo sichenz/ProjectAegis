@@ -43,7 +43,7 @@ def evaluate():
         
     num_features = test_dataset.num_features
     model = Conv1DAutoencoder(num_features=num_features, seq_len=window_size).to(device)
-    model.load_state_dict(torch.load(model_path, map_location=device))
+    model.load_state_dict(torch.load(model_path, map_location=device, weights_only=True))
     model.eval()
     
     criterion = nn.MSELoss(reduction='none') # We want error per sample
